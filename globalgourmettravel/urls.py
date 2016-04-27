@@ -18,7 +18,6 @@ from django.contrib import admin
 from travelapp import views
 from django.contrib.staticfiles import views as static_views
 from .settings import MEDIA_ROOT
-import contact.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,8 +27,7 @@ urlpatterns = [
     url(r'^spain$', views.spainguide, name='spain'),
 
     # Contact URLs
-    #url(r'', include('contact.urls')),
-    url(r'^contact$', contact.views.contact, name='contact'),
+    url(r'', include('contact.urls')),
 
     # Blog app urls
     url(r'', include('blog_app.urls')),
