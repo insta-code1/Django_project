@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    {% include 'cd-hero-slider.html' %}
+    <div>
+    {% include 'top-offers.html' %}
+    </div>
+    <section class='parallax-meteo'>
+        <div class='paral-effect'></div>
+        <div class="container">
+            <div class="row">
+                <div class='col-md-12'>
+                    <div class="text-meteo">
+                        <h2>Check your forecast</h2>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</p>
+                    </div>
+                    <div id="meteo1"></div>
+                    <div id="meteo2"></div>
+
+                    <a class="meteo-bt" href="">All Forecast</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="parallax_slide">
+        <div class="effect-over">
+            <div class="bx-about2 oxy-tmp">
+                <ul class="bxslider">
+                    <li>
+                        <img src="http://placehold.it/1920x600" alt=""/>
+                        <div class="cover-slide-trip"></div>
+                        <div class="trip-slide-price col-md-5">
+                            <div class="trip-slide-text prague">Paris</div>
+                            <p>Nestled between the Caribbean, the South Pacific, and the South Atlantic Oceans, South
+                                America is the wilder of the Americas, and a continent of superlatives...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/1920x600" alt=""/>
+                        <div class="cover-slide-trip"></div>
+                        <div class="trip-slide-price col-md-5">
+                            <div class="trip-slide-text prague">Venice</div>
+                            <p>Nestled between the Caribbean, the South Pacific, and the South Atlantic Oceans, South
+                                America is the wilder of the Americas, and a continent of superlatives...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/1920x600" alt=""/>
+                        <div class="cover-slide-trip"></div>
+                        <div class="trip-slide-price col-md-5">
+                            <div class="trip-slide-text prague">London</div>
+                            <p>Nestled between the Caribbean, the South Pacific, and the South Atlantic Oceans, South
+                                America is the wilder of the Americas, and a continent of superlatives...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/1920x600" alt=""/>
+                        <div class="cover-slide-trip"></div>
+                        <div class="trip-slide-price col-md-5">
+                            <div class="trip-slide-text prague">Prague</div>
+                            <p>Nestled between the Caribbean, the South Pacific, and the South Atlantic Oceans, South
+                                America is the wilder of the Americas, and a continent of superlatives...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--Close col-md-12-->
+        </div>
+    </section>
+
+    <!-- SECTION HELPFUL-->
+
+    <section class="section-help-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h2>HELPFUL INFORMATION</h2>
+                        <div class="separator">
+                            <div class="separator-style"></div>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</p>
+                    </div>
+
+                    <div class="col-md-6 help-info">
+                        <div class="col-md-3"><img src="/static/images/info-help1.png" alt=""/></div>
+                        <div class="col-md-9 box-info-help"><h3>BOOKING OF TICKETS</h3>
+                            <p>Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la
+                                dantiumeaque ipsa.</p>
+                            <a class="help-bt" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 help-info">
+                        <div class="col-md-3"><img src="/static/images/info-help4.png" alt=""/></div>
+                        <div class="col-md-9 box-info-help"><h3>TRAVELING WITH FAMILY</h3>
+                            <p>Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la
+                                dantiumeaque ipsa.</p>
+                            <a class="help-bt" href="">Read More</a>
+                        </div>
+                    </div>
+                </div><!--Close col-md-12-->
+            </div>
+            <div class="row sc-row">
+                <div class="col-md-12">
+                    <div class="col-md-6 help-info">
+                        <div class="col-md-3"><img src="{% static 'images/info-help3.png' %}" alt=""/></div>
+                        <div class="col-md-9 box-info-help"><h3>HOW TO CHOOSE A TOUR</h3>
+                            <p>Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la
+                                dantiumeaque ipsa.</p>
+                            <a class="help-bt" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 help-info">
+                        <div class="col-md-3"><img src="{% static 'images/info-help2.png' %}" alt=""/></div>
+                        <div class="col-md-9 box-info-help"><h3>DONT LOST YOUR FLY</h3>
+                            <p>Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la
+                                dantiumeaque ipsa.</p>
+                            <a class="help-bt" href="">Read More</a>
+                        </div>
+                    </div>
+                </div><!--Close col-md-12-->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PARTHNERS-->
+
+    <section class="section-parthners-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 parthners">
+                    <div class="text-center">
+                        <h2>OUR PARTHNERS</h2>
+                        <div class="separator">
+                            <div class="separator-style"></div>
+                        </div>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</p>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="http://placehold.it/380x285" alt=""/>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="http://placehold.it/380x285" alt=""/>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="http://placehold.it/380x285" alt=""/>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="http://placehold.it/380x285" alt=""/>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="http://placehold.it/380x285" alt=""/>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="http://placehold.it/380x285" alt=""/>
+                    </div>
+                </div><!--Close col-md-12-->
+            </div>
+        </div>
+    </section>
+
+    <!--Banner Last Minute-->
+    <section class='last-minute-banner'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class='col-sm-9 col-md-9'>
+                        <h1 class="l-main-banner-title">Last Minute Offer! <span>Hurry Up!</span></h1>
+                        <p class="l-main2-banner-title">Contact Travego for have evry information about trip!</p>
+                    </div>
+                    <div class="col-sm-3 col-md-3 button-banner"><a
+                            class="shortcode_button btn_large btn_type1 left_icon"
+                            href="javascript:void(0);"><i
+                            class="fa fa-hand-o-right"></i>Learn More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
