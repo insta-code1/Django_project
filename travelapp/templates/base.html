@@ -49,8 +49,8 @@
                 <div class="col-md-12">
                     <div class='top-contact'><i class="fa fa-phone"></i><span>+353 85 839 8224</span><i
                             class="fa fa-envelope"></i><span>info@globalgourmettravel.com/</span></div>
-                    <div class='top-login'><i class="fa fa-plus"></i><a class='reg-top' href='#'>Register</a><i
-                            class="fa fa-lock"></i><a href='#'>Login</a>
+                    <div class='top-login'><i class="fa fa-plus"></i><a class='reg-top' href="{% url 'register' %}">Register</a><i
+                            class="fa fa-lock"></i><a href="{% url 'login' %}">Login</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 </li>
 
                 <li>
-                    <a class="top-menu-txt" href="#">Home</a>
+                    <a class="top-menu-txt" href="{% url 'index' %}">Home</a>
                 </li>
 
                 <!-- resume -->
@@ -204,7 +204,7 @@
 
                 <!-- about -->
                 <li class="line-mini-menu k-opn">
-                    <a class="top-menu-txt" href="#">Home</a>
+                    <a class="top-menu-txt" href="{% url 'index' %}">Home</a>
                 </li>
                 <!--/ about -->
 

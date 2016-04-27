@@ -4,7 +4,7 @@ from django.utils import timezone
 
 class Post(models.Model):
     #  author is linked to a registered user in the "auth_user" table
-    author = models.ForeignKey('accounts.User')
+    author = models.ForeignKey('accounts.User')        # """ AUTH_USER_MODEL ='accounts.User' in settings"""
     title = models.CharField(max_length=200)
 
     image = models.ImageField(upload_to='images',
