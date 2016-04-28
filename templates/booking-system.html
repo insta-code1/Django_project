@@ -1,0 +1,99 @@
+<section id="reservation-form" class="reservation-color-form-green home3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+       <!--********************* Hotel reservation ********************-->
+       <div class="reservation-tabs">
+            <div id="message"></div><!-- Error message display -->
+        </div>
+        <div class="tab-content">
+        <form id="hotels-tab" class="tab-pane form-inline reservation-hotel active" method="post" name="reservationform">
+          <div class="row">
+            <div class="col-md-2 home2-hotel-where">
+              <div class="form-group">
+                <h3><span>01</span> Where?</h3>
+                <label for="destination1">Your destination</label>
+                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                <input type="text" class="form-control" placeholder="City, region" id="destination1" name="destination"/>
+              </div>
+            </div>
+            <div class="col-md-4 hotel-when">
+              <h3><span>02</span> When?</h3>
+                <div class="col-md-6 res-pad">
+                  <div class="form-group">
+                    <label for="checkin">Check-in</label>
+                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-In is from 11:00"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                    <div class="content-checkin-data">
+                        <i class="fa fa-calendar infield"></i>
+                        <input name="checkin" type="text" id="checkin" value="" class="form-control checkin" placeholder="Check-in"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 res-pad">
+                  <div class="form-group">
+                    <label for="checkout">Check-out</label>
+                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                    <div class="content-checkin-data">
+                        <i class="fa fa-calendar infield"></i>
+                        <input name="checkout" type="text" id="checkout" value="" class="form-control checkout" placeholder="Check-out"/>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 hotel-who">
+                <h3><span>03</span> Who?</h3>
+                <div class="col-md-4 res-pad">
+                  <div class="form-group">
+                    <label for="room">Room Type</label>
+                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                    <select class="form-control" name="room" id="room">
+                      <option class="opt-default" selected="selected" disabled="disabled">Rooms</option>
+                      <option value="Single">Single room</option>
+                      <option value="Double">Double Room</option>
+                      <option value="Deluxe">Deluxe room</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4 adul-h">
+                  <div class="form-group">
+                    <div class="guests-select">
+                      <label>Adults</label>
+                      <!--<i class="fa fa-user infield"></i>-->
+                      <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="+18 years"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                          <select name="adults" id="adults" class="form-control">
+                            <option disabled="disabled" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 child">
+                  <div class="form-group">
+                    <div class="guests-select">
+                      <label>Kids</label>
+                      <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="0 till 18 years"> <i class="fa fa-info-circle fa-lg"> </i> </div>
+                          <select name="children" id="children" class="form-control">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 colbtn">
+              <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+            </div>
+          </div>
+        </form>
+        </div>
+        </form>
+        </div><!--Close tab-content form-->
+      </div>
+    </div>
+  </div>
+</section>

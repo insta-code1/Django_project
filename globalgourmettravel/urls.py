@@ -30,14 +30,19 @@ urlpatterns = [
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
 
-    #Guides ULRs
-    url(r'^spain$', views.spainguide, name='spain'),
+       # Blog app URLs
+    url(r'', include('blog_app.urls')),
 
     # Contact URLs
     url(r'', include('contact.urls')),
 
-    # Blog app URLs
-    url(r'', include('blog_app.urls')),
+    # Guides ULRs
+    url(r'^spain$', views.spainguide, name='spain'),
+
+
+    # Payments URLs
+    url(r'', include('payments.urls')),
+
     # static and media URLs
     url(r'^static/(?P<path>.*)$', static_views.serve),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),

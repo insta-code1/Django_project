@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'travelapp',
     'contact',
     'accounts',
+    'payments',
   ]
 
 MIDDLEWARE_CLASSES = [
